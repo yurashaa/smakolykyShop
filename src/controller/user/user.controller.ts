@@ -1,6 +1,6 @@
 import {NextFunction, Request, Response} from 'express';
 
-import {ActionEnum, LogEnum, RequestHeadersEnum, ResponseStatusCodesEnum, UserStatusEnum} from '../../constatns';
+import {ActionEnum, LogEnum, RequestHeadersEnum, ResponseStatusCodesEnum, UserStatusEnum} from '../../constants';
 import {hashPassword, tokinizer} from '../../helpers';
 import {emailService, logService, userService} from '../../services';
 import {IRequestExtended, IUser} from '../../models';

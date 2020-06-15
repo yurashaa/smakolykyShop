@@ -11,7 +11,7 @@ import * as path from 'path';
 
 import {config} from './config';
 import {userRouter} from './routes';
-import {ResponseStatusCodesEnum} from './constatns';
+import {ResponseStatusCodesEnum} from './constants';
 
 dotenv.config();
 
@@ -46,10 +46,10 @@ class App {
   }
 
   private setupDB(): void {
-    mongoose.connect(config.MONGODB_URL, {useNewUrlParser: true});
+    mongoose.connect(config.MONGODB_URL, {useNewUrlParser: true}).catch(() => {});
 
     const db = mongoose.connection;
-    db.on('error', console.log.bind(console, 'MONGO ERRROR'));
+    db.on('error', console.log.bind(console, 'MONGO ERROR'));
   }
 
   private customErrorHandler(err: any, req: Request, res: Response, next: NextFunction): void {

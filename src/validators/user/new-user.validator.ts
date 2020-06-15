@@ -1,6 +1,6 @@
 import * as Joi from 'joi';
 
-import {RegExpEnum} from '../../constatns';
+import {RegExpEnum} from '../../constants';
 
 export const newUserValidator = Joi.object({
   age: Joi.number().integer().min(1).max(120).required(),

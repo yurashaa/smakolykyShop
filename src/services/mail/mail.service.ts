@@ -2,7 +2,7 @@ import * as EmailTemplates from 'email-templates';
 import * as nodemailer from 'nodemailer';
 import * as path from 'path';
 
-import {ActionEnum, ResponseStatusCodesEnum} from '../../constatns';
+import {ActionEnum, ResponseStatusCodesEnum} from '../../constants';
 import {config} from '../../config';
 import {htmlTemplates} from '../../email-templates';
 import {ErrorHandler} from '../../errors';

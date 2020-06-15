@@ -1,7 +1,7 @@
 import {Document, Model, model, Schema} from 'mongoose';
 
 import {IUser} from '../../models';
-import {TableNamesEnum, UserRoleEnum, UserStatusEnum} from '../../constatns';
+import {TableNamesEnum, UserRoleEnum, UserStatusEnum} from '../../constants';
 
 export type UserType = IUser & Document
 

@@ -1,4 +1,4 @@
-import {ActionEnum} from '../constatns';
+import {ActionEnum} from '../constants';
 
 export interface IUserToken {
   token?: string,

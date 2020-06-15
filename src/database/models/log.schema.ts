@@ -1,6 +1,6 @@
 import {Document, Model, model, Schema} from 'mongoose';
 
-import {TableNamesEnum} from '../../constatns';
+import {TableNamesEnum} from '../../constants';
 import {ILog} from '../../models';
 
 export type LogType = ILog & Document

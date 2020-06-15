@@ -2,7 +2,7 @@ import {Types} from 'mongoose';
 
 import {UserModel} from '../../database';
 import {IUser, IUserToken} from '../../models';
-import {ActionEnum} from '../../constatns';
+import {ActionEnum} from '../../constants';
 
 class UserService {
   createUser(user: Partial<IUser>): Promise<IUser> {

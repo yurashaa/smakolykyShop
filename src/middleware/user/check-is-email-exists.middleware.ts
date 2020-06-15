@@ -2,7 +2,7 @@ import {NextFunction, Request, Response} from 'express';
 
 import {userService} from '../../services';
 import {customErrors, ErrorHandler} from '../../errors';
-import {ResponseStatusCodesEnum} from '../../constatns';
+import {ResponseStatusCodesEnum} from '../../constants';
 
 export const checkIsEmailExistsMiddleware = async (req: Request, res: Response, next: NextFunction): Promise<void | NextFunction> => {
   const {email} = req.body;
